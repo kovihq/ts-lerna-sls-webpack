@@ -1,0 +1,42 @@
+#
+## Kovi API: api
+#
+
+service: api
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
+
+custom:
+  stage: ${opt:stage, 'local'}
+  region: ${self:custom.config.region, 'us-east-1'}
+  accountId: ${self:custom.config.accountId, 'oioi'}
+
+  serverless-offline:
+    port: 4000
+    host: 0.0.0.0
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: ${self:custom.stage}
+  region: ${self:custom.region}
+
+  memorySize: 256
+  timeout: 30
+
+functions: ${file(./tools/loader.js):functions}
+
+package:
+  individually: true
+  excludeDevDependencies: false
+  exclude:
+    - README.md
+    - .serverless/**
+    - .webpack/**
+    - test/**
+
+frameworkVersion: '>=1.50.0'
+
+

@@ -1,0 +1,11 @@
+very-complex-sum:
+  name: service-${self:custom.stage}-very-complex-sum
+  description: Do a very complex sum
+  handler: services/please-work/src/index.handler
+  memorySize: 256
+  timeout: 15
+  events:
+    - http:
+        path: sum
+        method: get
+        cors: true
