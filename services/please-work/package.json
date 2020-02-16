@@ -1,6 +1,6 @@
 {
   "name": "@kovihq/please-work",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "src/index.js",
   "license": "MIT",
   "gitHead": "48383cf7fc14b351913978dfc4c78d6a78c23e07"
