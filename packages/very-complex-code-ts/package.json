@@ -1,9 +1,10 @@
 {
-  "name": "very-complex-code",
+  "name": "@kovihq/very-complex-code",
   "version": "0.0.3",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^3.7.5"
-  }
+  },
+  "gitHead": "48383cf7fc14b351913978dfc4c78d6a78c23e07"
 }

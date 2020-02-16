@@ -22,5 +22,6 @@
   },
   "bugs": {
     "url": "https://github.com/kovihq/ts-lerna-sls-webpack/issues"
-  }
+  },
+  "gitHead": "48383cf7fc14b351913978dfc4c78d6a78c23e07"
 }
