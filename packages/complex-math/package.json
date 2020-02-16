@@ -1,6 +1,6 @@
 {
-  "name": "complex-math",
-  "version": "0.0.1",
+  "name": "@kovihq/complex-math",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "Bruno Ventura <bruno.ventura@kovi.com.br>",
   "homepage": "https://github.com/kovihq/ts-lerna-sls-webpack#readme",
@@ -13,9 +13,6 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kovihq/ts-lerna-sls-webpack.git"
